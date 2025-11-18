@@ -7,13 +7,13 @@ class Initial(Operator):
     """Convert text to initials.""" 
 
     def operate(self, text: str = None, params: Dict = None) -> str:
-        """Convert text to initials.""" 
         if not text:
             return ""
         
+        # Split text into words and take first character of each
         words = text.split()
-        initials = '.'.join(word[0].upper() for word in words if word)
-        return initials + '.' if initials else "" 
+        initials = '. '.join(word[0].upper() for word in words if word)  # Changed here
+        return initials + '.' if initials else ""
 
     def validate(self, params: Dict = None) -> None:
         """Initial does not require any parameters so no validation is needed."""
