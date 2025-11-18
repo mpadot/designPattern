@@ -8,10 +8,12 @@ from .encrypt import Encrypt
 
 from .decrypt import Decrypt  # isort:skip
 from .hash import Hash
+from .initial import Initial
 from .keep import Keep
 from .mask import Mask
 from .redact import Redact
 from .replace import Replace
+
 
 try:
     from .ahds_surrogate import AHDSSurrogate
@@ -26,6 +28,7 @@ __all__ = [
     "OperatorType",
     "Operator",
     "Hash",
+    "Initial"
     "Mask",
     "Redact",
     "Keep",
@@ -37,6 +40,7 @@ __all__ = [
     "AESCipher",
     "OperatorsFactory",
     "AHDS_AVAILABLE",
+    
 ]
 
 if AHDS_AVAILABLE:
