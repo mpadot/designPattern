@@ -1,4 +1,10 @@
 # Presidio anonymizer
+Identify how many if/elif branches the factory uses to select the operator.
+-There are 2 if branches. They are error-checking branches, not selection branches
+Identify the exact Python data structure used to select operators.
+-It uses a dictionary, specifically a nested dictionary, with outter and inner dictionaries
+Explain how this demonstrates the Strategy design pattern.
+-Different anonymization strategies share the same interface and can be selected dynamically, making them truly interchangeable
 
 ## Description
 
